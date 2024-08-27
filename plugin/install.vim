@@ -2,9 +2,9 @@
 
 if exists('g:lightline')
   let g:lightline = {
-        \ 'colorscheme': 'pastel_light',
+        \ 'colorscheme': 'springtime_girls',
         \ }
 endif
 
 " Load the colorscheme
-colorscheme pastel-light
+colorscheme springtime-girls
