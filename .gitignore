@@ -1,0 +1,53 @@
+# Node.js modules (if using npm or yarn for any part of the project)
+node_modules/
+package-lock.json
+yarn.lock
+
+# MacOS-specific files
+.DS_Store
+
+# Vim/Neovim swap files
+*.swp
+*.swo
+*.swn
+
+# Vim/Neovim backup files
+*.bak
+*.tmp
+
+# Neovim undo files
+*.un~
+
+# Temporary files created by editors
+*~
+*.log
+*.out
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.bak
+
+# Build directories (if you have any build scripts)
+build/
+dist/
+
+# Ignore specific editor directories
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore compiled files or binaries (if applicable)
+*.exe
+*.out
+*.o
+*.so
+
+# Ignore the plugin installation directory (if using something like Pathogen)
+bundle/
+
+# Ignore metadata files
+tags
+

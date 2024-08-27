@@ -1,0 +1,99 @@
+local colors = {
+    bg = "#FFDDE1", -- light pink
+    fg = "#333333", -- dark grey (for text)
+    blue = "#A2CBEF", -- baby blue
+    yellow = "#FFF7AE", -- pastel yellow
+    green = "#B6E6C3", -- sea green
+    lavender = "#C7B8E3", -- lavender
+    pink = "#FFDDE1", -- light pink
+}
+
+local theme = {
+    -- General
+    Normal = { fg = colors.fg, bg = colors.bg },
+    Comment = { fg = colors.lavender, bg = colors.bg, italic = true },
+    Keyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    Function = { fg = colors.green, bg = colors.bg },
+    String = { fg = colors.yellow, bg = colors.bg },
+    Variable = { fg = colors.fg, bg = colors.bg },
+    Type = { fg = colors.blue, bg = colors.bg, bold = true },
+    Constant = { fg = colors.green, bg = colors.bg },
+    Statement = { fg = colors.blue, bg = colors.bg, bold = true },
+    Identifier = { fg = colors.green, bg = colors.bg },
+    PreProc = { fg = colors.blue, bg = colors.bg },
+    Number = { fg = colors.yellow, bg = colors.bg },
+    Operator = { fg = colors.blue, bg = colors.bg },
+    LineNr = { fg = colors.lavender, bg = colors.bg },
+    CursorLineNr = { fg = colors.blue, bg = colors.bg, bold = true },
+    Visual = { fg = colors.none, bg = colors.lavender },
+    
+    -- TypeScript
+    tsKeyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    tsFunction = { fg = colors.green, bg = colors.bg },
+    tsString = { fg = colors.yellow, bg = colors.bg },
+
+    -- Go
+    goFunction = { fg = colors.green, bg = colors.bg },
+    goVar = { fg = colors.fg, bg = colors.bg },
+    goConst = { fg = colors.green, bg = colors.bg },
+
+    -- Python
+    pythonFunction = { fg = colors.green, bg = colors.bg },
+    pythonStatement = { fg = colors.blue, bg = colors.bg, bold = true },
+    pythonString = { fg = colors.yellow, bg = colors.bg },
+
+    -- Ruby
+    rubyKeyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    rubyFunction = { fg = colors.green, bg = colors.bg },
+    rubyString = { fg = colors.yellow, bg = colors.bg },
+
+    -- PHP
+    phpFunction = { fg = colors.green, bg = colors.bg },
+    phpVar = { fg = colors.fg, bg = colors.bg },
+    phpConst = { fg = colors.green, bg = colors.bg },
+
+    -- Kotlin
+    kotlinKeyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    kotlinFunction = { fg = colors.green, bg = colors.bg },
+    kotlinString = { fg = colors.yellow, bg = colors.bg },
+
+    -- Markdown
+    markdownHeadingDelimiter = { fg = colors.blue, bg = colors.bg, bold = true },
+    markdownCode = { fg = colors.green, bg = colors.bg },
+    markdownLinkText = { fg = colors.blue, bg = colors.bg },
+
+    -- C
+    cKeyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    cFunction = { fg = colors.green, bg = colors.bg },
+    cString = { fg = colors.yellow, bg = colors.bg },
+
+    -- Java
+    javaKeyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    javaFunction = { fg = colors.green, bg = colors.bg },
+    javaString = { fg = colors.yellow, bg = colors.bg },
+
+    -- Dart
+    dartKeyword = { fg = colors.blue, bg = colors.bg, bold = true },
+    dartFunction = { fg = colors.green, bg = colors.bg },
+    dartString = { fg = colors.yellow, bg = colors.bg },
+
+    -- HTML
+    htmlTag = { fg = colors.blue, bg = colors.bg, bold = true },
+    htmlEndTag = { fg = colors.blue, bg = colors.bg, bold = true },
+    htmlTagName = { fg = colors.green, bg = colors.bg },
+    htmlArg = { fg = colors.yellow, bg = colors.bg },
+
+    -- CSS
+    cssTagName = { fg = colors.blue, bg = colors.bg, bold = true },
+    cssClassName = { fg = colors.green, bg = colors.bg },
+    cssProperty = { fg = colors.yellow, bg = colors.bg },
+    cssValue = { fg = colors.green, bg = colors.bg },
+
+    -- Additional languages and more syntax groups can be added as needed
+}
+
+for group, settings in pairs(theme) do
+    vim.api.nvim_set_hl(0, group, settings)
+end
+
+vim.g.colors_name = "springtime-girls"
