@@ -15,7 +15,7 @@
 Add the following line to your `.vimrc` or `init.vim`:
 
 ```vim
-Plug 'your-repo/springtime-girls'
+Plug 'catielanier/springtime-girls'
 ```
 
 Then run:
