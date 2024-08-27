@@ -18,13 +18,3 @@ highlight Comment guifg=s:lavender gui=italic
 highlight Constant guifg=s:blue
 highlight String guifg=s:yellow
 highlight Function guifg=s:green
-highlight Keyword guifg=s:blue
-
-" Additional highlighting
-highlight Type guifg=s:blue
-highlight Identifier guifg=s:blue
-highlight Statement guifg=s:blue
-highlight PreProc guifg=s:blue
-highlight Special guifg=s:blue
-highlight Underlined guifg=s:blue
-highlight Todo guifg=s:lavender guibg=s:bg
