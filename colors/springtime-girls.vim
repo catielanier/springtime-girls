@@ -5,7 +5,7 @@ endif
 let g:colors_name = "springtime-girls"
 
 " Apply the background and foreground
-highlight Normal guifg=#2E2A2E guibg=#F7C6C7
+highlight Normal guifg=#2E2A2E guibg=#FFDDE1
 highlight Comment guifg=#C1A9C1 gui=italic
 highlight Constant guifg=#A1C6D4
 highlight String guifg=#F6E2B3
