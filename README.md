@@ -31,7 +31,7 @@ Then run:
 
 ```
 mkdir -p ~/.vim/colors
-curl -o ~/.vim/colors/springtime-girls.vim https://example.com/path/to/springtime-girls.vim
+curl -o ~/.vim/colors/springtime-girls.vim https://github.com/catielanier/springtime-girls/blob/main/colors/springtime-girls.vim
 ```
 
 2. Add the following line to your `.vimrc` or `init.vim` to use the colorscheme:
