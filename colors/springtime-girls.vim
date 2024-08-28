@@ -1,30 +1,27 @@
-" Vim color file
-"
-" Define color palette
-hi clear
+highlight clear
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
+let g:colors_name = "springtime-girls"
 
-set background=light
-let g:colors_name="springtime-girls"
+" Apply the background and foreground
+highlight Normal guifg=#1F1F1F guibg=#FFDDE1
+highlight Comment guifg=#A89CC9 gui=italic
+highlight Constant guifg=#8AB5D0
+highlight String guifg=#EDEAA8
+highlight Function guifg=#8CCF9A gui=bold
+highlight Keyword guifg=#8AB5D0
 
-hi Normal ctermfg=234 ctermbg=220 guifg=#333333 guibg=#FFDDE1
-hi Comment ctermfg=189 ctermbg=220 gui=italic guifg=#C7B8E3 guibg=#FFDDE1
-hi Constant ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-hi String ctermfg=184 ctermbg=220 guifg=#FFF7AE guibg=#FFDDE1
-hi Function ctermfg=107 ctermbg=220 guifg=#B6E6C3 guibg=#FFDDE1
-hi Keyword ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-
-hi Type ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-hi Identifier ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-hi Statement ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-hi PreProc ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-hi Special ctermfg=110 ctermbg=220 guifg=#A2CBEF guibg=#FFDDE1
-hi Underlined ctermfg=110 ctermbg=220 gui=underline guifg=#A2CBEF guibg=#FFDDE1
-hi Todo ctermfg=189 ctermbg=220 guifg=#C7B8E3 guibg=#FFDDE1
-hi LineNr ctermfg=75 ctermbg=220 guifg=#5eacd3 guibg=#FFDDE1
-hi CursorLineNr ctermfg=184 ctermbg=220 guifg=#FFF7AE guibg=#FFDDE1
-hi Visual ctermfg=236 ctermbg=220 guifg=#333333 guibg=#add8e6 gui=bold
-hi StatusLine ctermfg=234 ctermbg=75 guifg=#333333 guibg=#add8e6 gui=bold
-hi StatusLineNC ctermfg=238 ctermbg=220 guifg=#666666 guibg=#FFDDE1
+" Additional highlighting
+highlight Type guifg=#8AB5D0
+highlight Identifier guifg=#8AB5D0 gui=bold
+highlight Statement guifg=#8AB5D0
+highlight PreProc guifg=#8AB5D0
+highlight Special guifg=#8AB5D0
+highlight Underlined guifg=#8AB5D0
+highlight Todo guifg=#A89CC9 guibg=#FFDDE1
+highlight LineNr guifg=#4a8fb8 guibg=#FFDDE1
+highlight CursorLineNr guifg=#EDEAA8 guibg=#FFDDE1
+highlight Visual guifg=#1F1F1F guibg=#9fc2d6 gui=bold
+highlight StatusLine guifg=#1F1F1F guibg=#9fc2d6 gui=bold
+highlight StatusLineNC guifg=#555555 guibg=#FFDDE1
