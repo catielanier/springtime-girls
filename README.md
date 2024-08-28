@@ -1,5 +1,7 @@
 # Springtime-Girls Vim Colorscheme
 
+![Springtime Girls](https://github.com/catielanier/springtime-girls/blob/main/springtime-girls.png)
+
 `springtime-girls` is a light, pastel color scheme for Vim designed to provide a gentle and vibrant editing experience. It features support for Lightline, enhancing the visual appeal of your statusline.
 
 ## Features
@@ -36,7 +38,7 @@ curl -o ~/.vim/colors/springtime-girls.vim https://github.com/catielanier/spring
 
 2. Add the following line to your `.vimrc` or `init.vim` to use the colorscheme:
 
-```
+```vim
 colorscheme springtime-girls
 ```
 
